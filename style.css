@@ -1,0 +1,218 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E3F2FD; 
+    color: #1E88E5; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #1565C0; 
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+ h2{
+    text-align: left;
+    color: #1565C0; 
+    margin-bottom: 20px;
+    font-weight: bold;
+ }
+#postForm {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #F0F8FF; 
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#postForm input,
+#postForm textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #90CAF9; 
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #E3F2FD;
+    font-family: 'Poppins', sans-serif;
+}
+
+#postForm button {
+    padding: 12px 25px;
+    background: #1E88E5; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#postForm button:hover {
+    background: #1565C0; 
+}
+
+#posts .post {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #BBDEFB; 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#posts .post h2 {
+    color: #1565C0;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#posts .post p {
+    color: #1E88E5;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#posts .post button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background: #1E88E5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out;
+}
+
+#posts .post button.edit-btn {
+    background: #42A5F5; 
+}
+
+#posts .post button.delete-btn {
+    background: #E57373; 
+}
+
+#posts .post button:hover {
+    opacity: 0.9;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #BBDEFB; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-content h2 {
+    color: #1E88E5;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1565C0;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #1E88E5;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: border 0.2s ease-in-out;
+    align-items: center;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+    border-color: #1E88E5;
+    outline: none;
+}
+
+.modal-content .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    }
+    
+
+.modal-content button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+      
+    }
+    
+
+
+.modal-content button#saveEdit {
+    background: #1565C0; 
+}
+
+.modal-content button#cancelEdit,
+.modal-content button#cancelDelete {
+    background: #4b93d3; 
+}
+
+.modal-content button#confirmDelete {
+    background: #D1725C; 
+}
+
+.modal-content button:hover {
+    opacity: 0.9;
+}
